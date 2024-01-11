@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Todo</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+
+        <div id="newtask">
+            <input type="text" placeholder="Task to be done..">
+            <button id="click">Add</button>
+        </div>
+
+        <div id="tasks">
+            <span id="taskname">
+            </span>
+            <button class="delete">
+              <!-- <i class="far fa-trash-alt"></i> -->
+            </button>
+        </div>
+    </div>
+
+    <button onclick="clickHandle()">Click me</button>
+
+    <script>
+        function clickHandle(){
+            const element = document.getElementById("newtask")
+            element.style.backgroundColor = "Green"
+        }
+    </script>
+   <!-- <script src="app.js"></script> -->
+</body>
+</html>
